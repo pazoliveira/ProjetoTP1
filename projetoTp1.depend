@@ -1,10 +1,12 @@
 # depslib dependency file v1.0
-1789791017 source:/home/antenor/estudos/C++/projetoTp1/main.cpp
+1789852060 source:/home/antenor/estudos/C++/projetoTp1/main.cpp
 	<iostream>
 	"senha.h"
 	"prioridade.h"
 	"estado.h"
 	"limite.h"
+	<limits>
+	"nome.h"
 
 1789798569 source:/home/antenor/estudos/C++/projetoTp1/estado.cpp
 	"estado.h"
@@ -23,7 +25,7 @@
 	"papel.h"
 	<string>
 
-1789679115 /home/antenor/estudos/C++/projetoTp1/papel.h
+1789830632 /home/antenor/estudos/C++/projetoTp1/papel.h
 	<string>
 
 1789797796 source:/home/antenor/estudos/C++/projetoTp1/prioridade.cpp
@@ -46,4 +48,18 @@
 	<stdexcept>
 
 1789790535 /home/antenor/estudos/C++/projetoTp1/limite.h
+
+1789831055 source:/home/antenor/estudos/C++/projetoTp1/tamanho.cpp
+	"tamanho.h"
+
+1789830881 /home/antenor/estudos/C++/projetoTp1/tamanho.h
+	<string>
+
+1789851482 source:/home/antenor/estudos/C++/projetoTp1/nome.cpp
+	"nome.h"
+	<string>
+	<stdexcept>
+
+1789851864 /home/antenor/estudos/C++/projetoTp1/nome.h
+	<string>
 

@@ -39,12 +39,16 @@
 		<Unit filename="limite.cpp" />
 		<Unit filename="limite.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="nome.cpp" />
+		<Unit filename="nome.h" />
 		<Unit filename="papel.cpp" />
 		<Unit filename="papel.h" />
 		<Unit filename="prioridade.cpp" />
 		<Unit filename="prioridade.h" />
 		<Unit filename="senha.cpp" />
 		<Unit filename="senha.h" />
+		<Unit filename="tamanho.cpp" />
+		<Unit filename="tamanho.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

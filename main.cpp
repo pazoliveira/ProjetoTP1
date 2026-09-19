@@ -4,6 +4,7 @@
 #include "estado.h"
 #include "limite.h"
 #include <limits>
+#include "nome.h"
 
 using namespace std;
 
@@ -78,6 +79,23 @@ cin >> s3;
 limite.setLimite(s3);
 
 cout << limite.getLimite() << endl;
+
+
+Nome nome;
+string s4;
+
+cout << endl;
+cout << "Digite nome: ";
+cin.ignore(numeric_limits<streamsize>::max(), '\n');
+getline(cin, s4);
+
+try {
+    nome.setNome(s4);
+    cout << nome.getNome() << endl;
+}
+catch (invalid_argument &e) {
+    cout << "Exceção: " << e.what() << endl;
+}
 
 
     return 0;
