@@ -21,5 +21,4 @@ inline string Papel::getPapel() const {
 };
 
 
-
 #endif // PAPEL_H_INCLUDED
