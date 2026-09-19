@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1789791017 source:/home/antenor/estudos/C++/projetoTp1/main.cpp
+	<iostream>
+	"senha.h"
+	"prioridade.h"
+	"estado.h"
+	"limite.h"
+
+1789798569 source:/home/antenor/estudos/C++/projetoTp1/estado.cpp
+	"estado.h"
+	<string>
+
+1789677161 /home/antenor/estudos/C++/projetoTp1/estado.h
+	<string>
+
+1789680089 source:/home/antenor/estudos/C++/projetoTp1/dominios.cpp
+	"dominios.h"
+
+1789684553 /home/antenor/estudos/C++/projetoTp1/dominios.h
+	<string>
+
+1789684625 source:/home/antenor/estudos/C++/projetoTp1/papel.cpp
+	"papel.h"
+	<string>
+
+1789679115 /home/antenor/estudos/C++/projetoTp1/papel.h
+	<string>
+
+1789797796 source:/home/antenor/estudos/C++/projetoTp1/prioridade.cpp
+	"prioridade.h"
+
+1789679547 /home/antenor/estudos/C++/projetoTp1/prioridade.h
+	<string>
+
+1789790305 source:/home/antenor/estudos/C++/projetoTp1/senha.cpp
+	"senha.h"
+	<string>
+	<iostream>
+	<cctype>
+
+1789790220 /home/antenor/estudos/C++/projetoTp1/senha.h
+	<string>
+
+1789790613 source:/home/antenor/estudos/C++/projetoTp1/limite.cpp
+	"limite.h"
+	<stdexcept>
+
+1789790535 /home/antenor/estudos/C++/projetoTp1/limite.h
+
