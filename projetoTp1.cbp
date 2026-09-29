@@ -32,10 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="dominios.cpp" />
-		<Unit filename="dominios.h" />
+		<Unit filename="email.cpp" />
+		<Unit filename="email.h" />
 		<Unit filename="estado.cpp" />
 		<Unit filename="estado.h" />
+		<Unit filename="identificador.cpp" />
+		<Unit filename="identificador.h" />
 		<Unit filename="limite.cpp" />
 		<Unit filename="limite.h" />
 		<Unit filename="main.cpp" />
@@ -49,6 +51,8 @@
 		<Unit filename="senha.h" />
 		<Unit filename="tamanho.cpp" />
 		<Unit filename="tamanho.h" />
+		<Unit filename="timestamp.cpp" />
+		<Unit filename="timestamp.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

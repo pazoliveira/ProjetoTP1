@@ -5,6 +5,7 @@
 #include "limite.h"
 #include <limits>
 #include "nome.h"
+#include "timestamp.h"
 
 using namespace std;
 
@@ -97,6 +98,12 @@ catch (invalid_argument &e) {
     cout << "Exceção: " << e.what() << endl;
 }
 
+
+ Timestamp t;
+
+    t.setTimestamp("30-02-2026-16:35");
+
+    cout << "Timestamp: " << t.getTimestamp() << endl;
 
     return 0;
 }

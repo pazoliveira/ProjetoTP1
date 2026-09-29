@@ -7,7 +7,7 @@ using namespace std;
 void Nome::validarNome(string valor) {
 
     if (valor.empty() || valor.size() > 15 || valor.front() == ' ' || valor.back() == ' ') {
-       throw invalid_argument("Erro de argumento. Tente novamente!");
+       throw invalid_argument("Nome inválido. Tente novamente!");
 }
 
 };
