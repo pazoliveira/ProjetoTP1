@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1789852060 source:/home/antenor/estudos/C++/projetoTp1/main.cpp
+1790711820 source:/home/antenor/estudos/C++/projetoTp1/main.cpp
 	<iostream>
 	"senha.h"
 	"prioridade.h"
@@ -7,6 +7,7 @@
 	"limite.h"
 	<limits>
 	"nome.h"
+	"timestamp.h"
 
 1789798569 source:/home/antenor/estudos/C++/projetoTp1/estado.cpp
 	"estado.h"
@@ -63,11 +64,17 @@
 1789851864 /home/antenor/estudos/C++/projetoTp1/nome.h
 	<string>
 
-1790711658 source:/home/antenor/estudos/C++/projetoTp1/timestamp.cpp
+1790714028 source:/home/antenor/estudos/C++/projetoTp1/timestamp.cpp
 	"timestamp.h"
 
 1790711658 /home/antenor/estudos/C++/projetoTp1/timestamp.h
 	<iostream>
 	<stdexcept>
+	<string>
+
+1790716061 source:/home/antenor/estudos/C++/projetoTp1/email.cpp
+	"email.h"
+
+1790715587 /home/antenor/estudos/C++/projetoTp1/email.h
 	<string>
 

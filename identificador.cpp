@@ -1,7 +1,6 @@
 #include "identificador.h"
 
-bool Identificador::validar(string valor) {
-
+bool Identificador::validarIdentificador(string valor) {
 
     if (valor.length() != 6) {
         return false;
@@ -26,7 +25,7 @@ bool Identificador::validar(string valor) {
 
 void Identificador::setIdentificador(string valor) {
 
-    if (validar(valor)) {
+    if (validarIdentificador(valor)) {
         identificador = valor;
     }
 }

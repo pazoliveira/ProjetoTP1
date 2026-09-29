@@ -1,6 +1,6 @@
 #ifndef IDENTIFICADOR_H_INCLUDED
 #define IDENTIFICADOR_H_INCLUDED
-
+#include <string>
 
 using namespace std;
 
@@ -12,7 +12,7 @@ public:
     void setIdentificador(string);
     string getIdentificador() const;
 
-}
+};
 
 inline string Identificador::getIdentificador() const {
     return identificador;
