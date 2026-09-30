@@ -1,58 +1,58 @@
-Projeto Conjunto de produção de Sistema Kanban
+# Projeto Conjunto de produção de Sistema Kanban
 
-Tarefas remanescentes para conclusão das classes domínios:
+> Tarefas remanescentes para conclusão das classes domínios:
 
-[ ] TEXTO - ***
+## CLASSE TEXTO 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-[O] TIMESTAMP - ***
+## CLASSE TIMESTAMP 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-[O] EMAIL - ***
+## CLASSE EMAIL 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-[O] IDENTIFICADOR - **
+## IDENTIFICADOR 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-[O] NOME - **
+## CLASSE NOME - 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-[O] SENHA - **
+## CLASSE SENHA - 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-[X] LIMITE - *
+## CLASSE LIMITE 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-[X] ESTADO - *
+## CLASSE ESTADO 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-[X] PAPEL - *
+## CLASSE PAPEL 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-[X] PRIORIDADE - *
+## CLASSE PRIORIDADE 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-[X] TAMANHO - *
+## CLASSE TAMANHO - *
     [] Código
     [] Tratamento de erros
     [] Teste unitário
