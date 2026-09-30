@@ -17,17 +17,17 @@
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-## IDENTIFICADOR 
+## CLASSE IDENTIFICADOR 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-## CLASSE NOME - 
+## CLASSE NOME 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-## CLASSE SENHA - 
+## CLASSE SENHA 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
@@ -52,27 +52,22 @@
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
-## CLASSE TAMANHO - *
+## CLASSE TAMANHO 
     [] Código
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
 
-LEGENDA:
-(X) <- FEITO
-(O) <- EM DESENVOLVIMENTO 
-( ) <- VAZIO
-
 Arquitetura do projeto 
 
-[]Domínios 
+## Domínios 
     [] Tratamento de erros
     [] Teste unitário
     [] Documentação
     [] Código
     [] Unificação
 
-[]Entidades
+## Entidades
     [Cartão de atividade]
     [Pessoa]
     [Projeto]
