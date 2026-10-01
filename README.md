@@ -9,11 +9,11 @@
 | Status | Domínio | Dificuldade | Regras de Validação & Formato |
 | --- | --- | --- | --- |
 | `[X]` | **Estado** | 🟢 Fácil | Aceita exclusivamente as strings `"A FAZER"`, `"FAZENDO"` ou `"FEITO"`.
-| `[ ]` | **Identificador** | 🟢 Fácil | Exatamente 6 caracteres: os 3 primeiros são letras (`a-z`, `A-Z`) e os 3 últimos são dígitos (`0-9`).
+| `[X]` | **Identificador** | 🟢 Fácil | Exatamente 6 caracteres: os 3 primeiros são letras (`a-z`, `A-Z`) e os 3 últimos são dígitos (`0-9`).
 | `[X]` | **Limite** | 🟢 Fácil | Valor numérico inteiro no intervalo de `1` a `25` (inclusive).
-| `[ ]` | **Papel** | 🟢 Fácil | Aceita exclusivamente as strings `"GESTOR"` ou `"DESENVOLVEDOR"`.
-| `[ ]` | **Prioridade** | 🟢 Fácil | Aceita exclusivamente as strings `"ALTA"`, `"MEDIA"` ou `"BAIXA"`.
-| `[ ]` | **Tamanho** | 🟢 Fácil | Aceita exclusivamente as strings `"GRANDE"`, `"MÉDIO"` ou `"PEQUENO"`.
+| `[X]` | **Papel** | 🟢 Fácil | Aceita exclusivamente as strings `"GESTOR"` ou `"DESENVOLVEDOR"`.
+| `[X]` | **Prioridade** | 🟢 Fácil | Aceita exclusivamente as strings `"ALTA"`, `"MEDIA"` ou `"BAIXA"`.
+| `[X]` | **Tamanho** | 🟢 Fácil | Aceita exclusivamente as strings `"GRANDE"`, `"MÉDIO"` ou `"PEQUENO"`.
 | `[ ]` | **Nome** | 🟡 Médio | Até 15 caracteres (letras `A-Z`, `a-z` e espaços). Não pode começar nem terminar com espaço; todo espaço deve ser seguido obrigatoriamente por uma letra.
 | `[ ]` | **Senha** | 🟡 Médio | Exatamente 5 caracteres alfanuméricos (`a-z`, `A-Z`, `0-9`). Deve conter obrigatoriamente pelo menos uma letra e pelo menos um dígito.
 | `[ ]` | **Texto** | 🟡 Médio | Até 30 caracteres (letras, dígitos, espaços e pontuações `,`, `;`, `.`, `:`, `?`, `!`). Deve iniciar com letra maiúscula, terminar com ponto (`.`) e não pode conter pontuações consecutivas.
