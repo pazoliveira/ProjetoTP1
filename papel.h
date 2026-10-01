@@ -8,7 +8,7 @@ class Papel {
 
 private:
     string papel;
-    bool validarPapel(string valor);
+    void validarPapel(string valor);
 
 public:
     void setPapel(string valor);
