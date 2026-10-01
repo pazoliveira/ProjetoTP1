@@ -7,7 +7,7 @@ using namespace std;
 class Identificador {
 private:
     string identificador;
-    bool validarIdentificador (string);
+    void validarIdentificador (string);
 public:
     void setIdentificador(string);
     string getIdentificador() const;
