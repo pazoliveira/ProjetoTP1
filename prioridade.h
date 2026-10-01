@@ -8,7 +8,7 @@ class Prioridade {
 
 private:
     string prioridade;
-    bool validarPrioridade(string valor);
+    void validarPrioridade(string valor);
 
 public:
     void setPrioridade(string valor);
