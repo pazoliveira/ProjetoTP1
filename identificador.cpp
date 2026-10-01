@@ -1,10 +1,10 @@
-#include "identificador.h"
+#include "Identificador.h"
 #include <stdexcept>
 #include <cctype>
 
 using namespace std;
 
-void identificador::validarIdentificador(string valor) {
+void Identificador::validarIdentificador(string valor) {
     if (valor.length() != 6) {
         throw invalid_argument("Identificador deve conter exatamente 6 caracteres.");
     }
