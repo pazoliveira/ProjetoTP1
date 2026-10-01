@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1790711820 source:/home/antenor/estudos/C++/projetoTp1/main.cpp
+	<iostream>
+	"senha.h"
+	"prioridade.h"
+	"estado.h"
+	"limite.h"
+	<limits>
+	"nome.h"
+	"timestamp.h"
+
+1789798569 source:/home/antenor/estudos/C++/projetoTp1/estado.cpp
+	"estado.h"
+	<string>
+
+1789677161 /home/antenor/estudos/C++/projetoTp1/estado.h
+	<string>
+
+1789680089 source:/home/antenor/estudos/C++/projetoTp1/dominios.cpp
+	"dominios.h"
+
+1789684553 /home/antenor/estudos/C++/projetoTp1/dominios.h
+	<string>
+
+1789684625 source:/home/antenor/estudos/C++/projetoTp1/papel.cpp
+	"papel.h"
+	<string>
+
+1789830632 /home/antenor/estudos/C++/projetoTp1/papel.h
+	<string>
+
+1789797796 source:/home/antenor/estudos/C++/projetoTp1/prioridade.cpp
+	"prioridade.h"
+
+1789679547 /home/antenor/estudos/C++/projetoTp1/prioridade.h
+	<string>
+
+1789790305 source:/home/antenor/estudos/C++/projetoTp1/senha.cpp
+	"senha.h"
+	<string>
+	<iostream>
+	<cctype>
+
+1789790220 /home/antenor/estudos/C++/projetoTp1/senha.h
+	<string>
+
+1789790613 source:/home/antenor/estudos/C++/projetoTp1/limite.cpp
+	"limite.h"
+	<stdexcept>
+
+1789790535 /home/antenor/estudos/C++/projetoTp1/limite.h
+
+1789831055 source:/home/antenor/estudos/C++/projetoTp1/tamanho.cpp
+	"tamanho.h"
+
+1789830881 /home/antenor/estudos/C++/projetoTp1/tamanho.h
+	<string>
+
+1789852731 source:/home/antenor/estudos/C++/projetoTp1/nome.cpp
+	"nome.h"
+	<string>
+	<stdexcept>
+
+1789851864 /home/antenor/estudos/C++/projetoTp1/nome.h
+	<string>
+
+1790714028 source:/home/antenor/estudos/C++/projetoTp1/timestamp.cpp
+	"timestamp.h"
+
+1790711658 /home/antenor/estudos/C++/projetoTp1/timestamp.h
+	<iostream>
+	<stdexcept>
+	<string>
+
+1790716061 source:/home/antenor/estudos/C++/projetoTp1/email.cpp
+	"email.h"
+
+1790715587 /home/antenor/estudos/C++/projetoTp1/email.h
+	<string>
+
