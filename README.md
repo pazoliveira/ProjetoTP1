@@ -8,9 +8,9 @@
 
 | Status | Domínio | Dificuldade | Regras de Validação & Formato |
 | --- | --- | --- | --- |
-| `[ ]` | **Estado** | 🟢 Fácil | Aceita exclusivamente as strings `"A FAZER"`, `"FAZENDO"` ou `"FEITO"`.
+| `[X]` | **Estado** | 🟢 Fácil | Aceita exclusivamente as strings `"A FAZER"`, `"FAZENDO"` ou `"FEITO"`.
 | `[ ]` | **Identificador** | 🟢 Fácil | Exatamente 6 caracteres: os 3 primeiros são letras (`a-z`, `A-Z`) e os 3 últimos são dígitos (`0-9`).
-| `[ ]` | **Limite** | 🟢 Fácil | Valor numérico inteiro no intervalo de `1` a `25` (inclusive).
+| `[X]` | **Limite** | 🟢 Fácil | Valor numérico inteiro no intervalo de `1` a `25` (inclusive).
 | `[ ]` | **Papel** | 🟢 Fácil | Aceita exclusivamente as strings `"GESTOR"` ou `"DESENVOLVEDOR"`.
 | `[ ]` | **Prioridade** | 🟢 Fácil | Aceita exclusivamente as strings `"ALTA"`, `"MEDIA"` ou `"BAIXA"`.
 | `[ ]` | **Tamanho** | 🟢 Fácil | Aceita exclusivamente as strings `"GRANDE"`, `"MÉDIO"` ou `"PEQUENO"`.
