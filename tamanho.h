@@ -8,7 +8,7 @@ class Tamanho {
 
 private:
     string tamanho;
-    bool validarTamanho(string valor);
+    void validarTamanho(string valor);
 
 public:
     void setTamanho(string valor);
