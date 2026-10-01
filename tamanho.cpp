@@ -2,6 +2,7 @@
 
 using namespace std;
 
+/*
 bool Tamanho::validarTamanho(string valor) {
 
     if (valor == "Grande" || valor == "Medio" || valor == "Pequeno") {
@@ -17,3 +18,4 @@ void Tamanho::setTamanho(string valor) {
         tamanho = valor;
     }
 };
+/*
