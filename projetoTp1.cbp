@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="cartaoatividade.cpp" />
+		<Unit filename="cartaoatividade.h" />
 		<Unit filename="email.cpp" />
 		<Unit filename="email.h" />
 		<Unit filename="estado.cpp" />
@@ -45,8 +47,14 @@
 		<Unit filename="nome.h" />
 		<Unit filename="papel.cpp" />
 		<Unit filename="papel.h" />
+		<Unit filename="pessoa.cpp" />
+		<Unit filename="pessoa.h" />
 		<Unit filename="prioridade.cpp" />
 		<Unit filename="prioridade.h" />
+		<Unit filename="projeto.cpp" />
+		<Unit filename="projeto.h" />
+		<Unit filename="quadro.cpp" />
+		<Unit filename="quadro.h" />
 		<Unit filename="senha.cpp" />
 		<Unit filename="senha.h" />
 		<Unit filename="tamanho.cpp" />
