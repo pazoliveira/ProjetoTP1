@@ -32,9 +32,9 @@ Arquitetura do projeto
     [] Unificação
 
 ## Entidades
-    [Cartão de atividade]
-    [Pessoa]
-    [Projeto]
-    [Quadro]
+   `[X]` [Cartão de atividade] \
+   `[X]` [Pessoa] \
+   `[X]` [Projeto] \
+   `[X]` [Quadro] 
 
 
