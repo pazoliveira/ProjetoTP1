@@ -51,6 +51,8 @@
 		<Unit filename="senha.h" />
 		<Unit filename="tamanho.cpp" />
 		<Unit filename="tamanho.h" />
+		<Unit filename="texto.cpp" />
+		<Unit filename="texto.h" />
 		<Unit filename="timestamp.cpp" />
 		<Unit filename="timestamp.h" />
 		<Extensions />
