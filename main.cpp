@@ -43,7 +43,7 @@ string s;
 
 
 cout << endl;
-cout << "Prioridade [Alta, Media ou Baixa]: ";
+cout << "Prioridade [ALTA, MEDIA ou BAIXA]: ";
 cin >> s;
 
 
@@ -57,7 +57,7 @@ string s2;
 
 
 cout << endl;
-cout << "Estado [A Fazer, Fazendo ou Feito]: ";
+cout << "Estado [A FAZER, FAZENDO ou FEITO]: ";
 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // limpa o buffer removendo o \n que fica no final
 getline(cin, s2);
 

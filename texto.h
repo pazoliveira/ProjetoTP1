@@ -18,5 +18,6 @@ public:
 
 inline string Texto::getTexto() const {
     return texto;
+}
 
 #endif // TEXTO_H_INCLUDED

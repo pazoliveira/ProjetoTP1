@@ -12,10 +12,11 @@ void Tamanho::validarTamanho(string valor) {
 void Tamanho::setTamanho(string valor) {
     validarTamanho(valor);
     this->tamanho = valor;
-}
+};
 
-/*
-bool Tamanho::validarTamanho(string valor) {
+
+
+/* bool Tamanho::validarTamanho(string valor) {
 
     if (valor == "Grande" || valor == "Medio" || valor == "Pequeno") {
            return true;
@@ -30,4 +31,4 @@ void Tamanho::setTamanho(string valor) {
         tamanho = valor;
     }
 };
-/*
+*/

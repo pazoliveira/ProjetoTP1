@@ -1,4 +1,5 @@
 #include "texto.h"
+#include <stdexcept>
 
 using namespace std;
 
@@ -30,10 +31,16 @@ void Texto::validarTexto (string texto) {
                     proximo == '?' || proximo == '!') {
 
                     throw invalid_argument("Texto inválido. Não deve haver dois sinais de pontuações seguidos.");
+                }
 
-};
+            }
+
+        }
+    }
+
+}
+
 void Texto::setTexto(string valor) {
     validarTexto(valor);
-    this->nome = valor;
-
-};
+    this->texto = valor;
+}

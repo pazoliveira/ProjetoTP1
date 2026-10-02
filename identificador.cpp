@@ -20,7 +20,7 @@ void Identificador::validarIdentificador(string valor) {
     }
 }
 
-void identificador::setIdentificador(string valor) {
+void Identificador::setIdentificador(string valor) {
     validarIdentificador(valor);
     this->identificador = valor;
 }

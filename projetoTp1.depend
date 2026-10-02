@@ -22,17 +22,18 @@
 1789684553 /home/antenor/estudos/C++/projetoTp1/dominios.h
 	<string>
 
-1789684625 source:/home/antenor/estudos/C++/projetoTp1/papel.cpp
+1790941194 source:/home/antenor/estudos/C++/projetoTp1/papel.cpp
 	"papel.h"
+	<stdexcept>
+
+1790941194 /home/antenor/estudos/C++/projetoTp1/papel.h
 	<string>
 
-1789830632 /home/antenor/estudos/C++/projetoTp1/papel.h
-	<string>
-
-1789797796 source:/home/antenor/estudos/C++/projetoTp1/prioridade.cpp
+1790941194 source:/home/antenor/estudos/C++/projetoTp1/prioridade.cpp
 	"prioridade.h"
+	<stdexcept>
 
-1789679547 /home/antenor/estudos/C++/projetoTp1/prioridade.h
+1790941194 /home/antenor/estudos/C++/projetoTp1/prioridade.h
 	<string>
 
 1789790305 source:/home/antenor/estudos/C++/projetoTp1/senha.cpp
@@ -50,10 +51,11 @@
 
 1789790535 /home/antenor/estudos/C++/projetoTp1/limite.h
 
-1789831055 source:/home/antenor/estudos/C++/projetoTp1/tamanho.cpp
+1790949633 source:/home/antenor/estudos/C++/projetoTp1/tamanho.cpp
 	"tamanho.h"
+	<stdexcept>
 
-1789830881 /home/antenor/estudos/C++/projetoTp1/tamanho.h
+1790941194 /home/antenor/estudos/C++/projetoTp1/tamanho.h
 	<string>
 
 1789852731 source:/home/antenor/estudos/C++/projetoTp1/nome.cpp
@@ -76,5 +78,13 @@
 	"email.h"
 
 1790715587 /home/antenor/estudos/C++/projetoTp1/email.h
+	<string>
+
+1790949576 source:/home/antenor/estudos/C++/projetoTp1/identificador.cpp
+	"identificador.h"
+	<stdexcept>
+	<cctype>
+
+1790941194 /home/antenor/estudos/C++/projetoTp1/identificador.h
 	<string>
 
