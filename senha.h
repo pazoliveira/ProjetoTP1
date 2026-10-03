@@ -4,7 +4,22 @@
 
 using namespace std;
 
+class Senha {
+private:
+    string senha;
+    void validarSenha(string);
 
+public:
+    void setSenha(string valor);
+    string getSenha() const;
+};
+
+inline string Senha::getSenha() const {
+    return valor;
+};
+
+
+/*
 class Senha {
 private:
     string valor;
@@ -22,5 +37,6 @@ public:
 inline string Senha::getValor() const {
     return valor;
 };
+*/
 
 #endif // SENHA_H_INCLUDED
