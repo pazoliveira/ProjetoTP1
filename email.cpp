@@ -4,8 +4,6 @@
 
 using namespace std;
 
-// Validação da presença do "@"
-
 void Email::validarEmail(string valor) {
     size_t posArroba = valor.find('@');
     if (posArroba == string::npos || posArroba == valor.rfind('@')) {
@@ -34,47 +32,43 @@ void Email::validarEmail(string valor) {
         }
 
         if (c == '.' || c == '-') {
-            // Verifica se existe o próximo caractere e se ele é letra ou número
             if (i + 1 >= local.length() || !isalnum(local[i + 1])) {
                 throw invalid_argument("E-mail invalido. Apos os caracteres '.' e '-' deve conter uma letra ou numero.");
             }
         } 
     }
-}
 
-size_t inicio = 0
-while (inicio < dominio.length() ){
-    size_t fim = dominio.find(".",inicio)
-    if (fim == string::npos){
-        fim = dominio.length()
-    }
-    string parteDominio = dominio.substr(inicio, fim - inicio);
+    // Validação do Domínio (agora dentro da função!)
+    size_t inicio = 0;
+    while (inicio < dominio.length()) {
+        size_t fim = dominio.find('.', inicio);
+        if (fim == string::npos) {
+            fim = dominio.length();
+        }
+        
+        string parteDominio = dominio.substr(inicio, fim - inicio);
 
-        // Cada parte não pode ser vazia
-    if (parteDominio.empty()) {
+        if (parteDominio.empty()) {
             throw invalid_argument("Email invalido. Parte do dominio nao pode ser vazia.");
         }
 
-        // Regra: Não pode iniciar ou terminar com hífen
-    if (parteDominio[0] == '-' || parteDominio[parteDominio.length() - 1] == '-') {
+        if (parteDominio[0] == '-' || parteDominio[parteDominio.length() - 1] == '-') {
             throw invalid_argument("Email invalido. Parte do dominio nao pode iniciar ou terminar com hifen.");
         }
 
-        // Regra: Cada parte pode conter letra (a-z), dígito (0-9) ou hífen (-)
-    for (char c : parteDominio) {
-        if (!isalnum(c) && c != '-') {
-            throw invalid_argument("Email invalido. Caractere invalido no dominio.");
+        for (char c : parteDominio) {
+            if (!isalnum(c) && c != '-') {
+                throw invalid_argument("Email invalido. Caractere invalido no dominio.");
             }
         }
 
-    inicio = fim + 1;
+        inicio = fim + 1;
     }    
-
 }
 
-void Email::setEmail(string valor){
+void Email::setEmail(string valor) {
     validarEmail(valor);
-    this->valor = valor;
+    this->email = valor; // Corrigido de 'valor' para 'email' conforme o .h
 }
 
 /*
