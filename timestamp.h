@@ -1,22 +1,58 @@
-#ifndef TIMESTAMP_H_INCLUDED
-#define TIMESTAMP_H_INCLUDED
+#ifndef DATAHORA_H
+#define DATAHORA_H
 
-#include <iostream>
-#include <stdexcept>
 #include <string>
 
 using namespace std;
 
-class Timestamp {
+///
+/// @brief Classe de dominio para representacao de Data e Horario.
+///
+/// Formato esperado: DIA-MES-ANO-HORARIO (ex: 29-FEV-2024-14:30)
+/// - DIA: 1 a 31 (respeitando o mes e ano bissexto)
+/// - MES: JAN, FEV, MAR, ABR, MAI, JUN, JUL, AGO, SET, OUT, NOV, DEZ
+/// - ANO: 2000 a 2099
+/// - HORARIO: 00:00 a 23:59
+///
+class DataHora {
 private:
-    string timestamp;
+    string valor;
+
+    ///
+    /// @brief Valida se o formato e os valores da data/horario sao validos.
+    /// @param valor String no formato DIA-MES-ANO-HORARIO.
+    /// @throw std::invalid_argument Se o valor for invalido.
+    ///
     void validarTimestamp(string valor);
 
+    ///
+    /// @brief Auxiliar para checar se o ano e bissexto.
+    ///
+    bool ehBissexto(int ano);
+
 public:
-    void setTimestamp(string valor);
-    string getTimestamp();
+    ///
+    /// @brief Construtor padrao da classe DataHora.
+    ///
+    DataHora();
+
+    ///
+    /// @brief Construtor que inicializa com valor e aplica validacao.
+    /// @param valor String com a data e horario.
+    ///
+    DataHora(string valor);
+
+    ///
+    /// @brief Define um novo valor para a data/horario apos validar.
+    /// @param valor String no formato DIA-MES-ANO-HORARIO.
+    ///
+    void setDataHora(string valor);
+
+    ///
+    /// @brief Retorna a data/horario armazenada.
+    /// @return string O valor atual.
+    ///
+    string getDataHora() const;
 };
 
-
-
-#endif // TIMESTAMP_H_INCLUDED
+#endif // DATAHORA_H
