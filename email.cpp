@@ -1,5 +1,8 @@
 #include "email.h"
+#include <cctype>
+#include <stdexcept>
 
+/*
 bool Email::validar(string valor) {
 
     // Procura o @
@@ -134,7 +137,7 @@ bool Email::validar(string valor) {
 }
 
 void Email::setEmail(string valor) {
-
+*/
     if (validar(valor)) {
         email = valor;
     }
