@@ -2,6 +2,8 @@
 #include <string>
 #include <iostream>
 #include <cctype>
+#include <stdexcept>
+
 
 using namespace std;
 
@@ -10,21 +12,21 @@ bool temLetra = false;
 
 
 void Senha::validarSenha(string valor){
-    if (valor.lenght() != 5){
+    if (valor.length() != 5){
         throw invalid_argument("Senha Inválida. A senha deve ter exatamente 5 números");
     }
 
-    // Percorre toda a string
+    
     for (int i;i < valor.lenght(senha);i++ ){
         char letra = senha[i];
-        // Verifica se tem letra
+    
         if (isalpha(letra)){
             temLetra = true;
         } else if (isdigit(letra)){
             temNumero = true;
         }
-    if (temNumero  temLetra){
-
+    if (!temNumero || !temLetra){
+        throw invalid_argument("Senha inválida. A senha deve conter números e letras")
     }
 
 }
