@@ -10,7 +10,7 @@ using namespace std;
 class Timestamp {
 private:
     string timestamp;
-    bool validar(string valor);
+    void validarTimestamp(string valor);
 
 public:
     void setTimestamp(string valor);
