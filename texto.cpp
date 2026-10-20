@@ -1,8 +1,8 @@
 #include "texto.h"
+#include <cctype> // CORREÇÃO CRÍTICA: Necessário para o isupper()
 #include <stdexcept>
 
 using namespace std;
-
 
 void Texto::validarTexto (string texto) {
 
