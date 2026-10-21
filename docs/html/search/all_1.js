@@ -1,9 +1,0 @@
-var searchData=
-[
-  ['datahora_0',['datahora',['../classDataHora.html',1,'DataHora'],['../classDataHora.html#ac1852e3d4e0969fe3f3c7826ee0f1d2c',1,'DataHora::DataHora()'],['../classDataHora.html#a28307d9619859b42b4c894d2f8a1899c',1,'DataHora::DataHora(string valor)']]],
-  ['de_20especificação_20dos_20domínios_20—_20tp1_1',['Tabela de Especificação dos Domínios — TP1',['../md_README.html#autotoc_md1',1,'']]],
-  ['de_20produção_20de_20sistema_20kanban_2',['Projeto Conjunto de produção de Sistema Kanban',['../md_README.html',1,'']]],
-  ['domínios_3',['Domínios',['../md_README.html#autotoc_md3',1,'']]],
-  ['domínios_20—_20tp1_4',['Tabela de Especificação dos Domínios — TP1',['../md_README.html#autotoc_md1',1,'']]],
-  ['dos_20domínios_20—_20tp1_5',['Tabela de Especificação dos Domínios — TP1',['../md_README.html#autotoc_md1',1,'']]]
-];
