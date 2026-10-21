@@ -1,4 +1,4 @@
-#include "cartaoatividade.h"
+#include "entities/headers/cartao_atividade.h"
 
 CartaoAtividade::CartaoAtividade() {
 }

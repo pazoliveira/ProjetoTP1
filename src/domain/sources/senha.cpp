@@ -1,39 +1,38 @@
-#include "senha.h"
+#include "domain/headers/senha.h"
 #include <string>
 #include <iostream>
 #include <cctype>
 #include <stdexcept>
 
-
 using namespace std;
 
-bool temNumero = false;
-bool temLetra = false;
-
-
-void Senha::validarSenha(string valor){
-    if (valor.length() != 5){
-        throw invalid_argument("Senha Inválida. A senha deve ter exatamente 5 números");
+void Senha::validarSenha(string valor) {
+    if (valor.length() != 5) {
+        throw invalid_argument("Senha Invalida. A senha deve ter exatamente 5 caracteres.");
     }
 
-    
-    for (int i;i < valor.lenght(senha);i++ ){
-        char letra = senha[i];
-    
-        if (isalpha(letra)){
+    bool temNumero = false;
+    bool temLetra = false;
+
+    for (size_t i = 0; i < valor.length(); i++) {
+        char c = valor[i]; // Corrigido para ler de 'valor'
+
+        if (isalpha(c)) {
             temLetra = true;
-        } else if (isdigit(letra)){
+        } else if (isdigit(c)) {
             temNumero = true;
         }
-    if (!temNumero || !temLetra){
-        throw invalid_argument("Senha inválida. A senha deve conter números e letras")
     }
 
+    // A verificacao final deve ocorrer APOS o loop
+    if (!temNumero || !temLetra) {
+        throw invalid_argument("Senha invalida. A senha deve conter numeros e letras.");
+    }
 }
 
-void Senha::setValor(string valor) {
+void Senha::setSenha(string valor) {
     validarSenha(valor);
-    this->valor = valor;
+    this->senha = valor;
 }
 
 /*

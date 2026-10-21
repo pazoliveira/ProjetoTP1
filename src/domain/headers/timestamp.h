@@ -14,7 +14,7 @@ using namespace std;
 /// - ANO: 2000 a 2099
 /// - HORARIO: 00:00 a 23:59
 ///
-class DataHora {
+class Timestamp {
 private:
     string valor;
 
@@ -32,15 +32,15 @@ private:
 
 public:
     ///
-    /// @brief Construtor padrao da classe DataHora.
+    /// @brief Construtor padrao da classe Timestamp.
     ///
-    DataHora();
+    Timestamp();
 
     ///
     /// @brief Construtor que inicializa com valor e aplica validacao.
     /// @param valor String com a data e horario.
     ///
-    DataHora(string valor);
+    Timestamp(string valor);
 
     ///
     /// @brief Define um novo valor para a data/horario apos validar.

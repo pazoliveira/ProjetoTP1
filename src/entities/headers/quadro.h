@@ -2,9 +2,9 @@
 #define QUADRO_H_INCLUDED
 
 
-#include "identificador.h"
-#include "nome.h"
-#include "limite.h"
+#include "domain/headers/identificador.h"
+#include "domain/headers/nome.h"
+#include "domain/headers/limite.h"
 
 class Quadro {
 private:

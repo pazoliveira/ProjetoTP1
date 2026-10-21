@@ -1,4 +1,4 @@
-#include "quadro.h"
+#include "entities/headers/quadro.h"
 
 Quadro::Quadro() {
 }

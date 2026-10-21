@@ -1,10 +1,10 @@
 #ifndef PROJETO_H_INCLUDED
 #define PROJETO_H_INCLUDED
 
-#include "identificador.h"
-#include "nome.h"
-#include "texto.h"
-#include "timestamp.h"
+#include "domain/headers/identificador.h"
+#include "domain/headers/nome.h"
+#include "domain/headers/texto.h"
+#include "domain/headers/timestamp.h"
 
 class Projeto {
 private:

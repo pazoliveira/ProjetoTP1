@@ -1,24 +1,25 @@
-#include "timestamp.h"
+#include "domain/headers/timestamp.h"
 
-#include "datahora.h"
 #include <cctype>
 #include <stdexcept>
 
 using namespace std;
 
-DataHora::DataHora() {
+// Construtor padrão corrigido para Timestamp::Timestamp
+Timestamp::Timestamp() {
     this->valor = "";
 }
 
-DataHora::DataHora(string valor) {
+// Construtor com parâmetro corrigido para Timestamp::Timestamp
+Timestamp::Timestamp(string valor) {
     setDataHora(valor);
 }
 
-bool DataHora::ehBissexto(int ano) {
+bool Timestamp::ehBissexto(int ano) {
     return (ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0);
 }
 
-void DataHora::validar(string valor) {
+void Timestamp::validarTimestamp(string valor) {
     // Procura os separadores '-' e ':'
     size_t pos1 = valor.find('-');
     size_t pos2 = (pos1 != string::npos) ? valor.find('-', pos1 + 1) : string::npos;
@@ -104,12 +105,12 @@ void DataHora::validar(string valor) {
     }
 }
 
-void DataHora::setDataHora(string valor) {
-    validar(valor);
+void Timestamp::setDataHora(string valor) {
+    validarTimestamp(valor);
     this->valor = valor;
 }
 
-string DataHora::getDataHora() const {
+string Timestamp::getDataHora() const {
     return this->valor;
 }
 

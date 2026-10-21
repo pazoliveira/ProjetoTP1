@@ -1,13 +1,13 @@
 #ifndef CARTAOATIVIDADE_H_INCLUDED
 #define CARTAOATIVIDADE_H_INCLUDED
 
-#include "identificador.h"
-#include "nome.h"
-#include "texto.h"
-#include "prioridade.h"
-#include "estado.h"
-#include "tamanho.h"
-#include "timestamp.h"
+#include "domain/headers/identificador.h"
+#include "domain/headers/nome.h"
+#include "domain/headers/texto.h"
+#include "domain/headers/prioridade.h"
+#include "domain/headers/estado.h"
+#include "domain/headers/tamanho.h"
+#include "domain/headers/timestamp.h"
 
 class CartaoAtividade {
 private:

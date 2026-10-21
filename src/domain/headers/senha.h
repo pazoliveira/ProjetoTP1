@@ -1,5 +1,6 @@
 #ifndef SENHA_H_INCLUDED
 #define SENHA_H_INCLUDED
+
 #include <string>
 
 using namespace std;
@@ -7,7 +8,7 @@ using namespace std;
 class Senha {
 private:
     string senha;
-    void validarSenha(string);
+    void validarSenha(string valor);
 
 public:
     void setSenha(string valor);
@@ -15,9 +16,10 @@ public:
 };
 
 inline string Senha::getSenha() const {
-    return valor;
-};
+    return senha; // Corrigido de 'valor' para 'senha'
+}
 
+#endif // SENHA_H_INCLUDED
 
 /*
 class Senha {
@@ -39,4 +41,3 @@ inline string Senha::getValor() const {
 };
 */
 
-#endif // SENHA_H_INCLUDED

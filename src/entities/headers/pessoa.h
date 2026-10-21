@@ -1,10 +1,10 @@
 #ifndef PESSOA_H_INCLUDED
 #define PESSOA_H_INCLUDED
 
-#include "email.h"
-#include "nome.h"
-#include "senha.h"
-#include "papel.h"
+#include "domain/headers/email.h"
+#include "domain/headers/nome.h"
+#include "domain/headers/senha.h"
+#include "domain/headers/papel.h"
 
 class Pessoa {
 private:
