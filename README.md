@@ -1,7 +1,8 @@
 # Projeto Conjunto de produção de Sistema Kanban
+## Estrutura do projeto
 
+```
 kanban-project-manager/
-│
 ├── src/
 │   ├── domain/
 │   │   ├── headers/
@@ -16,7 +17,6 @@ kanban-project-manager/
 │   │   │   ├── tamanho.h
 │   │   │   ├── texto.h
 │   │   │   └── timestamp.h
-│   │   │
 │   │   └── sources/
 │   │       ├── email.cpp
 │   │       ├── estado.cpp
@@ -29,24 +29,30 @@ kanban-project-manager/
 │   │       ├── tamanho.cpp
 │   │       ├── texto.cpp
 │   │       └── timestamp.cpp
-│   │
 │   ├── entities/
 │   │   ├── headers/
 │   │   │   ├── cartao_atividade.h
 │   │   │   ├── pessoa.h
 │   │   │   ├── projeto.h
 │   │   │   └── quadro.h
-│   │   │
 │   │   └── sources/
 │   │       ├── cartao_atividade.cpp
 │   │       ├── pessoa.cpp
 │   │       ├── projeto.cpp
 │   │       └── quadro.cpp
-│   │
 │   └── main.cpp
-│
 ├── docs/
 ├── Doxyfile
 ├── CMakeLists.txt
 ├── .gitignore
 └── README.md
+```
+
+### Organização por camada
+
+| Camada | Pasta | Conteúdo |
+|--------|-------|----------|
+| Domínio | `src/domain/` | Tipos básicos com validação (nome, e-mail, senha, texto, identificador, estado, prioridade, papel, tamanho, limite, timestamp) |
+| Entidades | `src/entities/` | Classes do negócio (pessoa, projeto, quadro, cartão de atividade) |
+
+Cada camada tem uma pasta `headers/` (arquivos `.h`) e uma pasta `sources/` (arquivos `.cpp`).
