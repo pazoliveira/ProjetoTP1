@@ -8,7 +8,7 @@ class Estado {
 
 private:
     string estado;
-    bool validarEstado(string valor);
+    void validarEstado(string valor);
 
 public:
     void setEstado(string valor);
