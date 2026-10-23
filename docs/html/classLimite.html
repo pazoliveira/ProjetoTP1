@@ -96,16 +96,24 @@ $(document).ready(function(){initNavTree('classLimite.html',''); initResizable()
 </div><!--header-->
 <div class="contents">
 
+<p>Representa o domínio <a class="el" href="classLimite.html" title="Representa o domínio Limite no sistema Kanban.">Limite</a> no sistema Kanban.  
+ <a href="classLimite.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="limite_8h_source.html">limite.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e6880dfddcb4b70462da70635b74694" id="r_a3e6880dfddcb4b70462da70635b74694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLimite.html#a3e6880dfddcb4b70462da70635b74694">setLimite</a> (int valor)</td></tr>
+<tr class="memdesc:a3e6880dfddcb4b70462da70635b74694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define um novo valor após a validação.  <br /></td></tr>
 <tr class="separator:a3e6880dfddcb4b70462da70635b74694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7bea5b158cd6cede3bb164b81b764b5" id="r_ac7bea5b158cd6cede3bb164b81b764b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLimite.html#ac7bea5b158cd6cede3bb164b81b764b5">getLimite</a> () const</td></tr>
+<tr class="memdesc:ac7bea5b158cd6cede3bb164b81b764b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o valor atualmente armazenado.  <br /></td></tr>
 <tr class="separator:ac7bea5b158cd6cede3bb164b81b764b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Representa o domínio <a class="el" href="classLimite.html" title="Representa o domínio Limite no sistema Kanban.">Limite</a> no sistema Kanban. </p>
+<p>Valida e armazena o valor correspondente às regras de negócio. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac7bea5b158cd6cede3bb164b81b764b5" name="ac7bea5b158cd6cede3bb164b81b764b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac7bea5b158cd6cede3bb164b81b764b5">&#9670;&#160;</a></span>getLimite()</h2>
 
@@ -128,9 +136,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   18</span>                                   {</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">return</span> limite;</div>
-<div class="line"><span class="lineno">   20</span>};</div>
+
+<p>Retorna o valor atualmente armazenado. </p>
+<dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>                                   {</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> limite;</div>
+<div class="line"><span class="lineno">   36</span>};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -149,6 +160,20 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Define um novo valor após a validação. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valor</td><td>Dado de entrada a ser validado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Se o valor for inválido. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><span class="lineno">    4</span>                                {</div>
 <div class="line"><span class="lineno">    5</span>    validarLimite(valor);</div>
 <div class="line"><span class="lineno">    6</span>    this-&gt;limite = valor;</div>

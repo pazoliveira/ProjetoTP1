@@ -26,9 +26,8 @@ var NAVTREE =
 [
   [ "Projeto Tecnicas Programação 1", "index.html", [
     [ "Projeto Conjunto de produção de Sistema Kanban", "md_README.html", [
-      [ "Tabela de Especificação dos Domínios — TP1", "md_README.html#autotoc_md1", [
-        [ "Domínios", "md_README.html#autotoc_md3", null ],
-        [ "Entidades", "md_README.html#autotoc_md4", null ]
+      [ "Estrutura do projeto", "md_README.html#autotoc_md1", [
+        [ "Organização por camada", "md_README.html#autotoc_md2", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [

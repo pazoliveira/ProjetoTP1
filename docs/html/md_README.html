@@ -92,46 +92,64 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
   <div class="headertitle"><div class="title">Projeto Conjunto de produção de Sistema Kanban</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> </p><blockquote class="doxtable">
-<p>&zwj;Tarefas remanescentes para conclusão das classes domínios: </p>
-</blockquote>
-<p>Aqui está a tabela completa com as especificações e validações dos <b>11 Domínios</b>, organizada por nível de dificuldade e pronta para copiar e colar diretamente no seu <code><a class="el" href="README_8md.html">README.md</a></code> do Git:</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-Tabela de Especificação dos Domínios — TP1</h1>
+Estrutura do projeto</h1>
+<div class="fragment"><div class="line">kanban-project-manager/</div>
+<div class="line">├── src/</div>
+<div class="line">│   ├── domain/</div>
+<div class="line">│   │   ├── headers/</div>
+<div class="line">│   │   │   ├── email.h</div>
+<div class="line">│   │   │   ├── estado.h</div>
+<div class="line">│   │   │   ├── identificador.h</div>
+<div class="line">│   │   │   ├── limite.h</div>
+<div class="line">│   │   │   ├── nome.h</div>
+<div class="line">│   │   │   ├── papel.h</div>
+<div class="line">│   │   │   ├── prioridade.h</div>
+<div class="line">│   │   │   ├── senha.h</div>
+<div class="line">│   │   │   ├── tamanho.h</div>
+<div class="line">│   │   │   ├── texto.h</div>
+<div class="line">│   │   │   └── timestamp.h</div>
+<div class="line">│   │   └── sources/</div>
+<div class="line">│   │       ├── email.cpp</div>
+<div class="line">│   │       ├── estado.cpp</div>
+<div class="line">│   │       ├── identificador.cpp</div>
+<div class="line">│   │       ├── limite.cpp</div>
+<div class="line">│   │       ├── nome.cpp</div>
+<div class="line">│   │       ├── papel.cpp</div>
+<div class="line">│   │       ├── prioridade.cpp</div>
+<div class="line">│   │       ├── senha.cpp</div>
+<div class="line">│   │       ├── tamanho.cpp</div>
+<div class="line">│   │       ├── texto.cpp</div>
+<div class="line">│   │       └── timestamp.cpp</div>
+<div class="line">│   ├── entities/</div>
+<div class="line">│   │   ├── headers/</div>
+<div class="line">│   │   │   ├── cartao_atividade.h</div>
+<div class="line">│   │   │   ├── pessoa.h</div>
+<div class="line">│   │   │   ├── projeto.h</div>
+<div class="line">│   │   │   └── quadro.h</div>
+<div class="line">│   │   └── sources/</div>
+<div class="line">│   │       ├── cartao_atividade.cpp</div>
+<div class="line">│   │       ├── pessoa.cpp</div>
+<div class="line">│   │       ├── projeto.cpp</div>
+<div class="line">│   │       └── quadro.cpp</div>
+<div class="line">│   └── main.cpp</div>
+<div class="line">├── docs/</div>
+<div class="line">├── Doxyfile</div>
+<div class="line">├── CMakeLists.txt</div>
+<div class="line">├── .gitignore</div>
+<div class="line">└── README.md</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md2"></a>
+Organização por camada</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Status   </th><th class="markdownTableHeadNone">Domínio   </th><th class="markdownTableHeadNone">Dificuldade   </th><th class="markdownTableHeadNone">Regras de Validação &amp; Formato    </th></tr>
+<th class="markdownTableHeadNone">Camada   </th><th class="markdownTableHeadNone">Pasta   </th><th class="markdownTableHeadNone">Conteúdo    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>[X]</code>   </td><td class="markdownTableBodyNone"><b><a class="el" href="classEstado.html">Estado</a></b>   </td><td class="markdownTableBodyNone">🟢 Fácil   </td><td class="markdownTableBodyNone">Aceita exclusivamente as strings <code>"A FAZER"</code>, <code>"FAZENDO"</code> ou <code>"FEITO"</code>.    </td></tr>
+<td class="markdownTableBodyNone">Domínio   </td><td class="markdownTableBodyNone"><code>src/domain/</code>   </td><td class="markdownTableBodyNone">Tipos básicos com validação (nome, e-mail, senha, texto, identificador, estado, prioridade, papel, tamanho, limite, timestamp)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>[X]</code>   </td><td class="markdownTableBodyNone"><b><a class="el" href="classIdentificador.html">Identificador</a></b>   </td><td class="markdownTableBodyNone">🟢 Fácil   </td><td class="markdownTableBodyNone">Exatamente 6 caracteres: os 3 primeiros são letras (<code>a-z</code>, <code>A-Z</code>) e os 3 últimos são dígitos (<code>0-9</code>).    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>[X]</code>   </td><td class="markdownTableBodyNone"><b><a class="el" href="classLimite.html">Limite</a></b>   </td><td class="markdownTableBodyNone">🟢 Fácil   </td><td class="markdownTableBodyNone">Valor numérico inteiro no intervalo de <code>1</code> a <code>25</code> (inclusive).    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>[X]</code>   </td><td class="markdownTableBodyNone"><b><a class="el" href="classPapel.html">Papel</a></b>   </td><td class="markdownTableBodyNone">🟢 Fácil   </td><td class="markdownTableBodyNone">Aceita exclusivamente as strings <code>"GESTOR"</code> ou <code>"DESENVOLVEDOR"</code>.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>[X]</code>   </td><td class="markdownTableBodyNone"><b><a class="el" href="classPrioridade.html">Prioridade</a></b>   </td><td class="markdownTableBodyNone">🟢 Fácil   </td><td class="markdownTableBodyNone">Aceita exclusivamente as strings <code>"ALTA"</code>, <code>"MEDIA"</code> ou <code>"BAIXA"</code>.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>[X]</code>   </td><td class="markdownTableBodyNone"><b><a class="el" href="classTamanho.html">Tamanho</a></b>   </td><td class="markdownTableBodyNone">🟢 Fácil   </td><td class="markdownTableBodyNone">Aceita exclusivamente as strings <code>"GRANDE"</code>, <code>"MÉDIO"</code> ou <code>"PEQUENO"</code>.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>[X]</code>   </td><td class="markdownTableBodyNone"><b><a class="el" href="classNome.html">Nome</a></b>   </td><td class="markdownTableBodyNone">🟡 Médio   </td><td class="markdownTableBodyNone">Até 15 caracteres (letras <code>A-Z</code>, <code>a-z</code> e espaços). Não pode começar nem terminar com espaço; todo espaço deve ser seguido obrigatoriamente por uma letra.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>[X]</code>   </td><td class="markdownTableBodyNone"><b><a class="el" href="classSenha.html">Senha</a></b>   </td><td class="markdownTableBodyNone">🟡 Médio   </td><td class="markdownTableBodyNone">Exatamente 5 caracteres alfanuméricos (<code>a-z</code>, <code>A-Z</code>, <code>0-9</code>). Deve conter obrigatoriamente pelo menos uma letra e pelo menos um dígito.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>[X]</code>   </td><td class="markdownTableBodyNone"><b><a class="el" href="classTexto.html">Texto</a></b>   </td><td class="markdownTableBodyNone">🟡 Médio   </td><td class="markdownTableBodyNone">Até 30 caracteres (letras, dígitos, espaços e pontuações <code>,</code>, <code>;</code>, <code>.</code>, <code>:</code>, <code>?</code>, <code>!</code>). Deve iniciar com letra maiúscula, terminar com ponto (<code>.</code>) e não pode conter pontuações consecutivas.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>[X]</code>   </td><td class="markdownTableBodyNone"><b>EMAIL</b>   </td><td class="markdownTableBodyNone">🔴 Difícil   </td><td class="markdownTableBodyNone">Formato <code>parte-local@domínio</code>. <b>Parte local:</b> até 64 chars, sem iniciar/terminar com <code>.</code> ou <code>-</code>, ponto/hífen seguido de letra/dígito. <b>Domínio:</b> até 255 chars, subpartes separadas por <code>.</code>, sem iniciar/terminar com <code>-</code>.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>[X]</code>   </td><td class="markdownTableBodyNone"><b>Timestamp</b>   </td><td class="markdownTableBodyNone">🔴 Difícil   </td><td class="markdownTableBodyNone">Formato <code>DIA-MÊS-ANO-HORÁRIO</code>. Dia (<code>1</code>-<code>31</code>), Mês (<code>JAN</code>..<code>DEZ</code>), Ano (<code>2000</code>-<code>2099</code>), Horário (<code>00:00</code>-<code>23:59</code>). <b>Obrigatória validação de dias por mês e anos bissextos</b>.   </td></tr>
+<td class="markdownTableBodyNone">Entidades   </td><td class="markdownTableBodyNone"><code>src/entities/</code>   </td><td class="markdownTableBodyNone">Classes do negócio (pessoa, projeto, quadro, cartão de atividade)   </td></tr>
 </table>
-<hr  />
-<p>Arquitetura do projeto</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
-Domínios</h2>
-<p>[] Tratamento de erros [] Teste unitário [] Documentação [] Código [] Unificação</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
-Entidades</h2>
-<p><code>[X]</code> [Cartão de atividade] \ <code>[X]</code> [<a class="el" href="classPessoa.html">Pessoa</a>] \ <code>[X]</code> [<a class="el" href="classProjeto.html">Projeto</a>] \ <code>[X]</code> [<a class="el" href="classQuadro.html">Quadro</a>] </p>
+<p>Cada camada tem uma pasta <code>headers/</code> (arquivos <code>.h</code>) e uma pasta <code>sources/</code> (arquivos <code>.cpp</code>). </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
